@@ -1,0 +1,126 @@
+<section class="side-panel">
+  <!--Side panel 1-->
+  <div class="side-panel1">
+    @for (item of account; track item) {
+   <button> <a href={{item.link}}>
+      <div class={{item.logo_detail}}>
+        <div class={{item.panel_logo}}>
+          <span class="material-icons">
+            {{item.logoName}}
+          </span>
+
+        </div>
+        <div class={{item.panel1_logo}}>
+          {{item.click_name}}
+        </div>
+      </div> </a>
+    </button>
+    }
+    <button> <a routerLink="/sub">
+      <div class="sub">
+        <div class="panel-sub">
+          <span class="material-icons">
+            subscriptions
+          </span>
+
+        </div>
+        <div class="panel1-sub">
+          Subscriptions
+        </div>
+      </div> </a>
+    </button>
+
+
+  </div>
+
+  <br>
+  <div>
+    <hr class="break-line">
+  </div>
+
+  <br>
+
+<!--About your tracklist-->
+  <div class="you">
+    <div class="panel-you">
+      <h3>You</h3>
+    </div>
+    <br>
+    <div class="panel1-you">
+      >
+    </div>
+  </div>
+  <br>
+
+  <!-- Loop for tracking the your tracklist-->
+  @for (item of yourtrack; track item) {
+  <button>
+    <div class={{item.logo_detail}}>
+      <div class={{item.panel_logo}}>
+        <span class="material-icons">
+          {{item.logoName}}
+        </span>
+      </div>
+      <div class={{item.panel1_logo}}>
+        {{item.click_name}}
+      </div>
+    </div>
+  </button>
+  }
+  <br>
+  <div>
+    <hr class="break-line">
+  </div>
+<br>
+  <!--User Profiles-->
+  @for (item of user; track item) {
+  <button>
+    <div class="Show-more">
+      <div class="panel-Show-more">
+        <img src={{item.prof_image}} class="sub_image">
+      </div>
+      <div class="panel1-Show-more">
+        {{item.user_name}}
+      </div>
+    </div>
+  </button>
+  <br>
+  }
+
+  <div>
+    <hr class="break-line">
+  </div>
+<br>
+
+<!--Explore options-->
+@for (item of explore; track item) {
+  <div class="Show-more">
+    <div class="panel-Show-more">
+      <span class="material-icons">
+        {{item.icon}}
+      </span>
+    </div>
+    <div class="panel1-Show-more">
+      {{item.name}}
+    </div>
+  </div>
+}
+<br>
+  <div>
+    <hr class="break-line">
+  </div>
+
+  <br>
+  <H3>More from Youtube </H3>
+  <div class="Show-more">
+    <div class="panel-Show-more">
+      <span class="material-icons">
+        sports_esports
+      </span>
+    </div>
+    <div class="panel1-Show-more">
+      Gaming
+    </div>
+  </div>
+
+</section>
