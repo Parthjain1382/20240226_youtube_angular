@@ -110,15 +110,82 @@
   margin-left: -16px;
   cursor: pointer;
 }
+
 .account{
   height: 32px;
   width: 32px;
   margin-right: 36px;
   margin-top: 12px;
-  background-color: #0098A6;
+  background-color:#AA47BC;
   color: white;
   border-radius: 50%;
   border: none;
   outline: none;
   cursor: pointer;
+  position: relative;
+}
+
+#dropdown{
+  position: absolute;
+  width: 50px;
+  height:400px;
+  background-color: #282828;
+  right: 50px;
+  top: 5px;
+  left: auto;
+  width: 300px;
+  border-radius: 12px;
+  box-shadow: none;
+  min-height: 600px;
+  max-height: 1000px;
+}
+
+#dropdown ul{
+  display: flex;
+  flex-direction: column;
+
+}
+
+#dropdown .name{
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  padding: 16px;
+}
+
+#dropdown .name-mail{
+  padding: left 10px ;
+}
+
+#dropdown hr{
+  height: 1px;
+  border:none;
+  background-color:#3D3D3D ;
+}
+
+.listitem{
+  display: flex;
+  height: 40px;
+  padding-left: 29px;
+  align-items: center;
+
+  span{
+    margin-right: 10px;
+    font-size: 30px;
+  }
+
+  button{
+    background-color: #282828;
+    border: none;
+    font-size: 20px;
+    &:hover{
+      background-color:#3E3E3E;
+     }
+  }
+
+  a{
+    text-decoration: none;
+    color:white
+
+  }
 }
