@@ -1,3 +1,88 @@
+.navbar2{
+  display: flex;
+  top: 110px;
+  left: 255px;
+  position: relative;
+  height: 50px;
+  width: 1265px;
+  background-color: #0F0F0F;
+  color: rgb(255, 255, 255);
+  justify-content: space-between;
+}
+
+.left-side{
+  display: flex;
+  justify-content: space-around;
+}
+
+
+
+::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar track */
+}
+*{
+  scrollbar-color: #ccccccbb black;
+}
+.thumbnail {
+    border-radius: 5%;
+    width: 100%;
+  }
+
+  .video-title {
+    margin-top: 0;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: -5px;
+  }
+
+  .video-info-grid {
+    display: grid;
+    grid-template-columns: 50px 1fr;
+  }
+
+  .profile-picture {
+    width: 36px;
+    border-radius: 50px;
+  }
+
+  .thumbnail-row {
+    margin-bottom: 8px;
+    position: relative;
+  }
+
+  .video-author,
+  .video-stats {
+    font-size: 14px;
+    font-family: "Roboto","Arial",sans-serif;
+    color: #AAAAAA;
+  }
+
+  .video-author {
+    margin-bottom: -12px;
+  }
+
+  .video-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 16px;
+    row-gap: 30px;
+    margin-right: 55px;
+    margin-top: 17px;
+  }
+
+  .video-time {
+    font-size: 12px;
+    font-weight: 500;
+    padding: 4px;
+    border-radius: 2px;
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom: 8px;
+    right: 5px;
+  }
+
 
 /** Main content*/
 .carasol-button {
@@ -31,8 +116,8 @@
 /* Styles for the video section */
 .main-section{
   position: relative;
-  top: 50px;
-  left: 300px;
+  top: 56px;
+  left: 305px;
   height: auto;
   width: 1243px;
   background-color: #0F0F0F;

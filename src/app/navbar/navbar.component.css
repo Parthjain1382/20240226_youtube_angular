@@ -123,14 +123,15 @@
   outline: none;
   cursor: pointer;
   position: relative;
-}
+
 
 #dropdown{
+  display: none;
   position: absolute;
   width: 50px;
   height:400px;
   background-color: #282828;
-  right: 50px;
+  right: 30px;
   top: 5px;
   left: auto;
   width: 300px;
@@ -138,12 +139,22 @@
   box-shadow: none;
   min-height: 600px;
   max-height: 1000px;
+
+}
+
+&:hover{
+  #dropdown{
+    display: block;
+  }
+}
+
+#dropdown:hover{
+  display: block;
 }
 
 #dropdown ul{
   display: flex;
   flex-direction: column;
-
 }
 
 #dropdown .name{
@@ -162,30 +173,16 @@
   border:none;
   background-color:#3D3D3D ;
 }
+}
 
-.listitem{
+.lines{
+  width: 100%;
+  background-color: #282828;
+  border: none;
   display: flex;
-  height: 40px;
-  padding-left: 29px;
-  align-items: center;
+  font-size: 15px;
+}
 
-  span{
-    margin-right: 10px;
-    font-size: 30px;
-  }
-
-  button{
-    background-color: #282828;
-    border: none;
-    font-size: 20px;
-    &:hover{
-      background-color:#3E3E3E;
-     }
-  }
-
-  a{
-    text-decoration: none;
-    color:white
-
-  }
+.box{
+ display: flex;
 }

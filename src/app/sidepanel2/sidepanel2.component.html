@@ -1,0 +1,20 @@
+<section class="side-panel">
+  <!--Side panel 1-->
+  <h1 style="color: #3D3D3D;">Setting</h1>
+  <br>
+  <div class="side-panel1">
+    @for (item of account; track item) {
+   <button> <a href={{item.link}}>
+      <div class={{item.logo_detail}}>
+        <div class={{item.panel1_logo}}>
+          {{item.click_name}}
+        </div>
+      </div> </a>
+    </button>
+    }
+
+
+  </div>
+
+
+</section>

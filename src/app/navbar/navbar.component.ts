@@ -10,4 +10,10 @@ import { RouterLink } from '@angular/router';
 })
 export class NavbarComponent {
 
+  p:Array<{}>=[
+    {
+      name:'setting',value:"setting",
+    }
+  ]
+  
 }

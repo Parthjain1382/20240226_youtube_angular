@@ -104,10 +104,7 @@ explore:Array<{icon:string,name:string}>=[
     icon:"local_fire_department",
     name:"Trending"
   },
-  {
-    icon:"local_fire_department",
-    name:"Trending",
-  },
+  
   {
     icon:"shopping_bag",
     name:"shopping",

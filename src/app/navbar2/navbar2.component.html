@@ -1,0 +1,50 @@
+<div class="navbar2">
+  <div style="margin-top: 15px;
+  margin-left: 15px;">
+    <b><p style="font-weight: bold; font-size :20px;">Latest</p></b>
+  </div>
+  <div class="left-side">
+    <div style=" margin-top: 15px;margin-right: 40px; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;color:blue">Manage</div>
+    <div >
+      <span class="material-icons" style="margin-top: 15px;margin-right: 20px">
+        grid_view
+        </span>
+    </div>
+    <div><span class="material-icons" style="margin-top: 15px;margin-right: 50px">
+      list
+      </span></div>
+  </div>
+</div>
+
+
+<section class="main-section" style=" top: 120px;">
+
+  <div class="panel1-line1">
+    @for (item of filteredData ; track $index) {
+      <div class="video-preview">
+          <div class="thumbnail-row">
+              <img class="thumbnail" src="{{item.thumbnailSrc}}">
+              <div class="video-time">{{item.videoTime}}</div>
+          </div>
+          <div class="video-info-grid">
+              <div class="channel-picture">
+                  <img class="profile-picture" src={{item.profileSrc}}>
+              </div>
+              <div class="video-info" style="color: white;">
+                  <p class="video-title">
+                     {{item.title}}
+                  </p>
+                  <br>
+                  <p class="video-author">
+                    {{item.author}}
+                  </p>
+                  <br>
+                  <p class="video-stats">
+                      {{item.views}} views &#183; 1 year ago
+                  </p>
+              </div>
+          </div>
+      </div>
+    }
+</div>
+</section>
